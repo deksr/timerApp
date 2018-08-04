@@ -27,21 +27,24 @@ class TimerForm extends Component{
 			<div>
 				<br/><br/><br/>
 				<label for="hours">Hour</label>
-				<input 
+				<input
+				className="timerLabel" 
 				id ="hours" 
 				type="number" 
 				defaultValue={this.props.baseTime.get('hours')}
 				onChange = {this.changTimeHandler}/>
 
-				<label for="minutes">min</label>
-				<input 
+				<label for="minutes">Min</label>
+				<input
+				className="timerLabel" 
 				id ="minutes" 
 				type="number" 
 				defaultValue={this.props.baseTime.get('minutes')}
 				onChange = {this.changTimeHandler}/>
 
-				<label for="seconds">sec</label>
+				<label for="seconds">Sec</label>
 				<input 
+				className="timerLabel"
 				id ="seconds" 
 				type="number" 
 				defaultValue={this.props.baseTime.get('seconds')}

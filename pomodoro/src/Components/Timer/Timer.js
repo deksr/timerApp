@@ -4,9 +4,9 @@ import TimerDisplay from './TimerDisplay';
 import TimerButton from './TimerButton';
 import TimerForm from './TimerForm';
 import * as timerStates from './TimerState';
+import moment from 'moment';
+import './Timer.css';
 
-
-import moment from 'moment'
 
 
 class Timer extends Component {
@@ -85,11 +85,7 @@ class Timer extends Component {
 
 	render() {
 		return(
-			<div> 
-				<h5> Timer </h5>
-
-				<TimerDthree/>
-
+			<div className="timerPage"> 
 				<TimerDisplay 
 				currentTime = {this.state.currentTime} 
 				timerState={this.state.timerState} />

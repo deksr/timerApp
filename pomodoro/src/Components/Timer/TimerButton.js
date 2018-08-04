@@ -12,13 +12,13 @@ class TimerButton extends Component {
 
 	getButton() {
 		if (this.props.timerState === timerStates.NOT_SET)
-      return (<button onClick={this.props.startTimer}>Start</button>);
+      return (<button className="timerButton" onClick={this.props.startTimer}>Start</button>);
 
 		if (this.props.timerState === timerStates.RUNNING)
-      return (<button onClick={this.props.stopTimer}>Interrupt</button>);
+      return (<button className="timerButton" onClick={this.props.stopTimer}>Stop</button>);
 
 		if (this.props.timerState === timerStates.COMPLETE)
-      return (<button onClick={this.props.stopTimer}>Resetme</button>);
+      return (<button className="timerButton"onClick={this.props.stopTimer}>Reset</button>);
 
 	}
 
@@ -26,7 +26,7 @@ class TimerButton extends Component {
 	render(){
 		return (
 			<div> 
-			{this.getButton()}
+			  {this.getButton()}
 	    </div>
 		)
 	}

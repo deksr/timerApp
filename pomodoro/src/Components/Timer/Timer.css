@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Lato:100|Roboto:100');
+
+.timerDisplay{
+	font-size: 100px;
+}
+
+
+.timerButton {
+	  font-family: 'Lato';
+    background-color: #ff4d4d;
+    border: 0.5px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.timerButton:focus {
+	outline:0;
+}
+
+
+input{
+  width: 230px;
+  box-sizing: border-box;
+  border: 2px solid #ff4d4d;
+  border-bottom: 0.5px solid white;
+  outline:none;
+  box-shadow: none;
+  font-size: 16px;
+  background-color: #ff4d4d;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  font-size:40px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+
+.alarm{
+	height: 0px;
+	width: 0px;
+	border: 0px;
+	border: none;
+	position: absolute;
+	top: 500px;
+}
+
+.pomotomato{
+  position: absolute;
+  left: 78%;
+  top: 100px;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer; 
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+

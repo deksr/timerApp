@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
+import Pomo from './Pomo';
 import * as timerStates from './TimerState';
+
+
+
+
 
 
 const lp = (val) => {
@@ -10,12 +15,15 @@ const lp = (val) => {
 const TimerDisplay = (props) => (
   <div>
     <div>
-      {
-        (props.timerState === timerStates.COMPLETE)
-        && <iframe height="315" src="https://piviso.com/uploads/audio/2017-05-audio/kitchen-timer-20170512-03.mp3"></iframe>
-      }
+      {props.timerState === timerStates.COMPLETE
+        && (
+          <React.Fragment>
+          <iframe className="alarm"  src="http://www.gravomaster.com/alarm/sounds/ring1.wav"></iframe> 
+        <Pomo />
+        </React.Fragment>)}
     </div>
-    <div>
+
+    <div className = "timerDisplay">
       <h2>
         {`${lp(props.currentTime.get('hours'))}:${lp(props.currentTime.get('minutes'))}:${lp(props.currentTime.get('seconds'))}`}
       </h2>
