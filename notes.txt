@@ -1,0 +1,12 @@
+deploying react app to heroku:
+
+npm install -g create-react-app
+create-react-app repoA
+cd repoA
+git init
+git add .
+git commit -m “initial commit”
+heroku create (You should see two links after running this command. Copy the second one)
+git remote add heroku
+git push heroku master
+heroku apps:rename NEWNAME
